@@ -1,0 +1,78 @@
+.assets {
+  width: 97%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.assets > .item {
+  min-height: 120rpx;
+  align-items: center;
+  border-radius: 15rpx;
+  border: 4rpx solid #e1e1e1;
+  padding: 15rpx;
+  box-sizing: border-box;
+  display: flex;
+}
+
+/* 资产框样式 */
+.assets .top {
+  justify-content: space-between;
+}
+
+.assets .top_left {
+  font-size: 35rpx;
+}
+
+.assets .top_right {
+  display: flex;
+  flex-flow: column wrap;
+  font-size: 32rpx;
+  align-items: flex-end;
+}
+
+.assets .money {
+  color: #76BA99;
+  font-size: 38rpx;
+}
+
+.assets .net_money {
+  color: #3f3f3fe7;
+  font-size: 28rpx;
+}
+
+/* 添加账户样式 */
+.assets .add_box {
+  margin-top: 30rpx;
+}
+
+.assets .add_text {
+  font-size: 35rpx;
+  margin-left: 20rpx;
+  color: #3f3f3fe7;
+}
+
+.assets .acount_item {
+  margin-top: 30rpx;
+  justify-content: space-between;
+}
+.assets .acount_item .acount_item_left {
+  font-size: 35rpx;
+}
+
+.assets .acount_item .acount_item_right {
+  display: flex;
+  flex-flow: column wrap;
+  font-size: 32rpx;
+  align-items: flex-end;
+}
+
+.assets .acount_item .money {
+  color: #76BA99;
+  font-size: 38rpx;
+}
+
+.assets .acount_item .net_money {
+  color: #3f3f3fe7;
+  font-size: 28rpx;
+}

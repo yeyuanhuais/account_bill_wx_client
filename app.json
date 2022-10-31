@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/property/property",
+    "pages/more/more",
+    "pages/report/report",
+    "pages/bill/bill",
+    "pages/choose_account_type/choose_account_type",
+    "pages/property_item_detail/property_item_detail",
+    "pages/add_edit_bill_record/add_edit_bill_record",
+    "pages/add_edit_account/add_edit_account",
+    "pages/income_expenditure_classification/income_expenditure_classification"
+  ],
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/property/property",
+        "text": "资产"
+      },
+      {
+        "pagePath": "pages/report/report",
+        "text": "报表"
+      },
+      {
+        "pagePath": "pages/bill/bill",
+        "text": "账单"
+      },
+      {
+        "pagePath": "pages/more/more",
+        "text": "更多"
+      }
+    ]
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark"
+  },
+  "usingComponents": {
+    "icon": "/components/common/icon/icon",
+    "tabs": "/components/common/tabs/tabs",
+    "cells": "/components/common/cells/cells",
+    "cell": "/components/common/cell/cell"
+  },
+  "useExtendedLib": {
+    "weui": true
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

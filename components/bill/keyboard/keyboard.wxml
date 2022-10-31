@@ -1,0 +1,24 @@
+<view class="keyboard {{ !keyHidden && 'hind_box' }}">
+    <view class="key-box">
+        <view class="number-box clearfix">
+            <view wx:for="{{KeyboardKeys}}" wx:key="*this" data-key="{{item}}" class="key" hover-class="number-box-hover" catchtap="handleKey">
+                {{item}}
+            </view>
+        </view>
+        <view class="btn-box">
+            <!-- TODO: 需要替换成删除icon -->
+            <view class="key" hover-class="number-box-hover" data-key="X" catchtap="handleKey">
+                <icon name="icon-tuige"></icon>
+            </view>
+            <view class="key" hover-class="number-box-hover" data-key="+" catchtap="handleKey">
+                <icon name="icon-jia1"></icon>
+            </view>
+            <view class="key" hover-class="number-box-hover" data-key="-" catchtap="handleKey">
+                <icon name="icon-jian"></icon>
+            </view>
+            <view class="key pay_btn" hover-class="pay-btn-hover" catchtap="handleSubmit">
+                {{isCalculate?"=":"确定"}}
+            </view>
+        </view>
+    </view>
+</view>

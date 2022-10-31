@@ -1,0 +1,67 @@
+<view class="property_item_detail">
+  <view class="top" style="background-color:#76BA99">
+    <view class="balance">
+      <text>￥222222.33</text>
+      <text>账户余额</text>
+    </view>
+    <view class="inflowOutflow">
+      <view class="year">
+        <picker mode="date" class="picker" fields="year" value="{{year}}" bindchange="bindDateChange">
+          <text>{{year}}</text>
+        </picker>
+        <text>年</text>
+      </view>
+      <view class="inflow">
+        <text>￥222222.33</text>
+        <text>流出</text>
+      </view>
+      <view class="outflow">
+        <text>￥222222.33</text>
+        <text>流入</text>
+      </view>
+    </view>
+  </view>
+  <view class="bottom">
+    <view class="content">
+      <block wx:for="{{ listDatas }}" wx:key="index">
+        <view class="list_content" bindtap="onListClick" data-index="{{ index }}">
+          <view class="list_flex">
+            <text class="month">9月</text>
+            <text>09.01-09.30</text>
+          </view>
+          <view class="list_flex">
+            <text>流入：￥0.00</text>
+            <text>流出：￥0.00</text>
+          </view>
+          <view>
+            <icon name="{{selected[index] ? 'icon-arrowup' : 'icon-arrowdown'}}" size="30"></icon>
+          </view>
+        </view>
+        <view class="list_text {{selected[index] ? '' : 'hidden_content'}}">
+          <view wx:if="{{!item.list_content}}" class="waterlessData">
+            <icon name="icon-wushuju" size="100" />
+            <text>无流水数据</text>
+          </view>
+          <block wx:else>
+            <view class="day">
+              <view class="timetype">
+                <text class="mr20">09日</text>
+                <icon name="icon-xianjinqianbao" size="40" />
+                <text class="ml20">交通</text>
+              </view>
+              <text>+888888</text>
+            </view>
+            <view class="day">
+              <view class="timetype">
+                <text class="mr20">09日</text>
+                <icon name="icon-xianjinqianbao" size="40" />
+                <text class="ml20">交通</text>
+              </view>
+              <text>+888888</text>
+            </view>
+          </block>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

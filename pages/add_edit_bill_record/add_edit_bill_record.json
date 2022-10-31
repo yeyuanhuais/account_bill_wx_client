@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "income-expenditure-category": "/components/bill/income_expenditure_category/income_expenditure_category",
+        "keyboard": "/components/bill/keyboard/keyboard"
+    }
+}

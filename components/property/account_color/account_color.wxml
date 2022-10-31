@@ -1,0 +1,2 @@
+<input class="color_block" name="color" placeholder="账户颜色" type="text" confirm-type="next" value="{{value}}" catchtap="toPick" />
+<color-picker bindchangeColor="pickColor" initColor="{{value}}" show="{{pick}}" />

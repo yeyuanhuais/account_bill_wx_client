@@ -1,0 +1,7 @@
+/* pages/choose_account_type/choose_account_type.wxss */
+.weui-cells__title {
+  margin: 15rpx !important;
+}
+.dec {
+  font-size: 35rpx;
+}

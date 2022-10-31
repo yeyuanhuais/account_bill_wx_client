@@ -1,0 +1,9 @@
+<view class="property">
+  <tabs tabs="{{tabsData}}" activeTab="{{activeTab}}" swiperClass="tabs_swiper" bindtabclick="onTabClick">
+    <block wx:for="{{tabsData}}" wx:key="index">
+      <view class="tab_content" data-set="{{item}}" slot="tab-content-{{index}}">
+        <assets-or-liabilities dataItem="{{item}}" bind:checkboxChange="checkboxChange" />
+      </view>
+    </block>
+  </tabs>
+</view>

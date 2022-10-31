@@ -1,0 +1,72 @@
+<mp-form id="form" rules="{{rules}}" models="{{formData}}">
+  <view class="section" prop="name">
+    <view class="section__title">账户名称：</view>
+    <input name="name" placeholder="账户名称" type="text" confirm-type="next" value="{{formData.name}}" />
+  </view>
+  <view class="section section_gap">
+    <view class="section__title">账户类型：</view>
+    <input name="type_name" placeholder="账户类型" type="text" confirm-type="next" disabled value="{{formData.type_name}}" />
+  </view>
+  <view class="section">
+    <view class="section__title">金额：</view>
+    <input name="money" placeholder="金额" type="digit" confirm-type="next" value="0" value="{{formData.money}}" />
+  </view>
+  <view class="section">
+    <view class="section__title">选择账户颜色：</view>
+    <view style="background:{{formData.color}};">
+      <account-color name="color" />
+    </view>
+  </view>
+  <view class="section section_gap hidden">
+    <view class="section__title">asset_type</view>
+    <input name="asset_type" placeholder="asset_type" type="number" confirm-type="next" disabled value="{{formData.asset_type}}" />
+  </view>
+  <view class="section section_gap hidden">
+    <view class="section__title">type</view>
+    <input name="type" placeholder="type" type="number" confirm-type="next" disabled value="{{formData.type}}" />
+  </view>
+  <view class="section section_gap hidden">
+    <view class="section__title">icon</view>
+    <input name="icon" placeholder="icon" type="text" confirm-type="next" disabled value="{{formData.icon}}" />
+  </view>
+  <view class="btn-area">
+    <button type="primary" bindtap="submitForm">提交</button>
+    <button formType="reset">重置</button>
+  </view>
+</mp-form>
+<!-- <form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section">
+    <view class="section__title">账户名称：</view>
+    <input name="name" placeholder="账户名称" type="text" confirm-type="next" value="{{formData.name}}" />
+  </view>
+  <view class="section section_gap">
+    <view class="section__title">账户类型：</view>
+    <input name="type_name" placeholder="账户类型" type="text" confirm-type="next" disabled value="{{formData.type_name}}" />
+  </view>
+  <view class="section">
+    <view class="section__title">金额：</view>
+    <input name="money" placeholder="金额" type="digit" confirm-type="next" value="0" value="{{formData.money}}" />
+  </view>
+  <view class="section">
+    <view class="section__title">选择账户颜色：</view>
+    <view style="background:{{formData.color}};">
+      <account-color name="color" />
+    </view>
+  </view>
+  <view class="section section_gap hidden">
+    <view class="section__title">asset_type</view>
+    <input name="asset_type" placeholder="asset_type" type="number" confirm-type="next" disabled value="{{formData.asset_type}}" />
+  </view>
+  <view class="section section_gap hidden">
+    <view class="section__title">type</view>
+    <input name="type" placeholder="type" type="number" confirm-type="next" disabled value="{{formData.type}}" />
+  </view>
+  <view class="section section_gap hidden">
+    <view class="section__title">icon</view>
+    <input name="icon" placeholder="icon" type="text" confirm-type="next" disabled value="{{formData.icon}}" />
+  </view>
+  <view class="btn-area">
+    <button formType="submit" type="primary">提交</button>
+    <button formType="reset">重置</button>
+  </view>
+</form> -->

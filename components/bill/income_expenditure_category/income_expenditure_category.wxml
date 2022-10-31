@@ -1,0 +1,15 @@
+<view class="income_expenditure_category">
+  <block wx:if="{{classifications_data.length}}">
+    <block wx:for="{{classifications_data}}" wx:key="index">
+      <view class="one" catchtap="onClick" data-item="{{item}}">
+        <icon name="{{item.icon}}" size="70" />
+        <text class="text">{{item.name}}</text>
+      </view>
+    </block>
+  </block>
+  <block wx:else>
+    <view class="no_data">
+      <icon name="icon-wushuju" size="300" />
+    </view>
+  </block>
+</view>

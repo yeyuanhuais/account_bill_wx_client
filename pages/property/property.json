@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "navigationBarTitleText": "资产",
+  "usingComponents": {
+    "assets-or-liabilities": "/components/property/assets_or_liabilities/assets_or_liabilities"
+  }
+}

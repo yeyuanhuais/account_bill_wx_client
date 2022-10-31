@@ -1,0 +1,51 @@
+.income_expenditure_classification {
+  .icon {
+    margin-right: 20rpx;
+  }
+}
+.classify_dialog {
+  .weui-half-screen-dialog {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      min-height: 110rpx;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .weui-half-screen-dialog__ft {
+      padding: 35rpx;
+    }
+
+    .desc {
+      flex: 1;
+      overflow: auto;
+      .classify_view {
+        display: flex;
+        margin-bottom: 50rpx;
+        display: flex;
+        align-items: center;
+        input {
+          width: 100%;
+          margin: 12rpx 20rpx;
+          padding: 20rpx 20rpx;
+          border: 5rpx solid #adcf9f;
+          border-radius: 20rpx;
+          -webkit-transition: 0.5s;
+          transition: 0.5s;
+          outline: none;
+          &:focus {
+            border: 5rpx solid #76ba99;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}

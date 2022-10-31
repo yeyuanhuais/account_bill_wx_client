@@ -1,0 +1,21 @@
+<view class="trend">
+  <picker class="picker_date" mode="date" fields="year" value="{{time}}" bindchange="bindDateChange">
+    <view class="picker">{{time}}</view>
+  </picker>
+  <view class="bar">
+    <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ecLineDate }}"></ec-canvas>
+  </view>
+  <view class="month_item">
+    <block wx:for="{{classifyItem}}" wx:key="index">
+      <view class="item">
+        <view class="list_flex">
+          <text class="month">9月</text>
+          <text class="monthDetail">09.01-09.30</text>
+        </view>
+        <text>0.00</text>
+        <text>8888</text>
+        <text class="redColor">0.00</text>
+      </view>
+    </block>
+  </view>
+</view>

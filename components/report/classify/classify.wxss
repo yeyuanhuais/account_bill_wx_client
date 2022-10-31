@@ -1,0 +1,50 @@
+.classify {
+  width: 100%;
+  height: 100%;
+}
+.classify .pie {
+  width: 100%;
+  height: 500rpx;
+}
+.classify ec-canvas {
+  width: 100%;
+  height: 100%;
+}
+.classify .picker_group {
+  height: 85rpx;
+  line-height: 85rpx;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+  color: #888;
+  border-bottom: 1rpx solid #efefef;
+}
+.classify .picker_group .picker_date {
+  /* background-color: yellow; */
+  color: #64bff1;
+  height: 55rpx;
+  line-height: 55rpx;
+  margin: 0 2%;
+  padding: 0 2%;
+  border: 1rpx solid #64bff1;
+  border-radius: 30rpx;
+}
+.classify .classify_item .item {
+  min-height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+  font-size: 40rpx;
+  border-top: 1rpx solid #f3f3f3;
+}
+.classify .classify_item .item .timetype {
+  text-align: start;
+}
+.classify .classify_item .item .timetype .mr20 {
+  margin-right: 20rpx;
+}
+.classify .classify_item .item .timetype .ml20 {
+  margin-left: 20rpx;
+}

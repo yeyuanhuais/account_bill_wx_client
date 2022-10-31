@@ -1,0 +1,22 @@
+@import "/assets/icon/icon.wxss";
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+.tabs_swiper {
+  height: calc(100vh - 94rpx);
+}
+.tab_content {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+}
+.global__fix_tabbar {
+  padding-bottom: calc(100rpx + env(safe-area-inset-bottom));
+}

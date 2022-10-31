@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "half-screen-dialog": "../../property/half_screen_dialog/half_screen_dialog"
+    }
+}

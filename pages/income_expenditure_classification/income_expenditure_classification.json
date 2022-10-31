@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "navigationBarTitleText": "收支分类",
+  "usingComponents": {
+    "halfScreenDialog": "/components/common/half-screen-dialog/half-screen-dialog",
+    "iconData": "/components/common/icon-data/icon-data",
+    "slideview": "/components/common/slideview/slideview"
+  }
+}

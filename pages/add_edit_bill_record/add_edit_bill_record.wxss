@@ -1,0 +1,74 @@
+.add_edit_bill_record {
+  height: 100vh;
+  position: relative;
+}
+.add_edit_bill_record .tab_content {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+.add_edit_bill_record .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1rpx dashed #ccc;
+}
+.add_edit_bill_record .top .top_left text {
+  margin-left: 20rpx;
+}
+.add_edit_bill_record .top .top_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60rpx;
+}
+.add_edit_bill_record .top .top_right .input-box {
+  position: relative;
+  max-width: 350rpx;
+  overflow-x: hidden;
+}
+.add_edit_bill_record .top .top_right .input-box text {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+}
+.add_edit_bill_record .top .top_right .input-box input {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: none;
+}
+.add_edit_bill_record .remark {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.add_edit_bill_record .remark textarea {
+  text-align: end;
+}
+.add_edit_bill_record .middle {
+  flex: 1;
+  overflow: auto;
+}
+.add_edit_bill_record .bottom {
+  width: 100%;
+  background-color: rgba(245, 245, 245, 0.6);
+}
+.add_edit_bill_record .bottom .bottom_top {
+  display: flex;
+  padding: 10rpx;
+}
+.add_edit_bill_record .bottom .bottom_top .picker_type {
+  margin-left: 20rpx;
+}
+.add_edit_bill_record .bottom .bottom_top .border {
+  border: 1rpx solid #dddddf;
+  border-radius: 50rpx;
+  padding: 10rpx 30rpx;
+}

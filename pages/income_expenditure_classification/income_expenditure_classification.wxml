@@ -1,0 +1,40 @@
+<view class="income_expenditure_classification">
+  <tabs tabs="{{tabsData}}" activeTab="{{activeTab}}" swiperClass="tabs_swiper" bindtabclick="onTabClick" isCenter>
+    <block wx:for="{{tabsData}}" wx:key="index">
+      <view class="tab_content" data-set="{{item}}" slot="tab-content-{{index}}">
+        <cells>
+          <cell>
+            <view catchtap="add" data-type="{{item.id}}">
+              <icon name="icon-add" />
+              添加
+            </view>
+          </cell>
+          <block wx:for="{{classifications_data}}" wx:for-item="item_data" wx:for-index="index_data" wx:key="index_data">
+            <slideview show="{{false}}" buttons="{{slideButtons}}" bindbuttontap="slideButtonTap" data-item="{{item_data}}" data-type="{{item.id}}">
+              <cell>
+                <view>
+                  <icon name="{{item_data.icon}}" wx:if="{{item_data.icon}}" class="icon" />
+                  {{item_data.name}}
+                </view>
+              </cell>
+            </slideview>
+          </block>
+        </cells>
+      </view>
+    </block>
+  </tabs>
+  <halfScreenDialog show="{{dialogVis}}" height="95%" class="classify_dialog">
+    <view slot="title" class="title">{{formData.title}}</view>
+    <view slot="desc" class="desc">
+      <view class="classify_view">
+        <icon name="{{formData.icon}}" wx:if="{{formData.icon}}" size="70" />
+        <input value="{{formData.name}}" placeholder="请输入分类名称" bindinput="inputName" />
+      </view>
+      <iconData catchtap="tapIcon" class="icon" />
+    </view>
+    <view slot="footer" class="footer">
+      <button type="default" class="weui-btn" catchtap="cancel">取消</button>
+      <button type="primary" class="weui-btn" catchtap="submit">确定</button>
+    </view>
+  </halfScreenDialog>
+</view>

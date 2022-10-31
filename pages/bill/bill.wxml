@@ -1,0 +1,48 @@
+<view class="bill">
+  <view class="vertical_line"></view>
+  <block wx:for="{{billData}}" wx:for-item="yearItem" wx:for-index="yearIndex" wx:key="yearIndex">
+    <block wx:for="{{yearItem.children}}" wx:for-item="monthItem" wx:for-index="monthIndex" wx:key="monthIndex">
+      <view class="flex_space_between_center">
+        <view class="text_end flex_1 mrbl10">
+          <view>{{monthItem.time}}月收入</view>
+          <view>￥{{monthItem.income}}</view>
+        </view>
+        <wave-progress-ball class="ball" />
+        <view class="flex_1 mrbl10">
+          <view>{{monthItem.time}}月支出</view>
+          <view>￥{{monthItem.expenditure}}</view>
+        </view>
+      </view>
+      <block wx:for="{{monthItem.children}}" wx:for-item="dayItem" wx:for-index="dayIndex" wx:key="dayIndex">
+        <view class="middle flex_space_between_center flex_1">
+          <view class="text_end flex_1">
+            <text class="mrbl10">￥{{dayItem.income}}</text>
+            <text class="mrbl10">收入</text>
+          </view>
+          <view class="day">{{dayItem.time}}</view>
+          <view class="flex_1">
+            <text class="mrbl10">支出</text>
+            <text class="mrbl10">￥{{dayItem.expenditure}}</text>
+          </view>
+        </view>
+        <block wx:for="{{dayItem.children}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+          <view class="middle flex_space_between_center flex_1">
+            <view class="text_end flex_1">
+              <block wx:if="{{item.income}}">
+                <text class="mrbl10">￥{{item.income}}</text>
+                <text class="mrbl10">{{item.name}}</text>
+              </block>
+            </view>
+            <view class="day">{{item.time}}</view>
+            <view class="flex_1">
+              <block wx:if="{{item.expenditure}}">
+                <text class="mrbl10">{{item.name}}</text>
+                <text class="mrbl10">￥{{item.expenditure}}</text>
+              </block>
+            </view>
+          </view>
+        </block>
+      </block>
+    </block>
+  </block>
+</view>

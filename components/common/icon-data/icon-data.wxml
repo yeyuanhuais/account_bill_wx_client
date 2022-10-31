@@ -1,0 +1,7 @@
+<view class="icon_view">
+  <block wx:for="{{icon_data}}" wx:key="index">
+    <view class="icon">
+      <icon name="{{item}}" size="70" catchtap="tapIcon" data-icon="{{item}}" />
+    </view>
+  </block>
+</view>

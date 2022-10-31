@@ -1,0 +1,14 @@
+<!-- components/property/half_screen_dialog.wxml -->
+<mp-half-screen-dialog bindclose="close" show="{{true}}" maskClosable="{{false}}">
+  <view slot="title">
+    <text>请选择要展示的账户</text>
+  </view>
+  <view slot="desc">
+    <mp-checkbox-group multi="{{true}}" bindchange="checkboxChange">
+      <mp-checkbox wx:for="{{accountData}}" wx:key="id" label="{{item.title}}" value="{{item.id}}" checked="{{item.value}}"></mp-checkbox>
+    </mp-checkbox-group>
+  </view>
+  <view slot="footer">
+    <button type="primary" bindtap="close">确定</button>
+  </view>
+</mp-half-screen-dialog>

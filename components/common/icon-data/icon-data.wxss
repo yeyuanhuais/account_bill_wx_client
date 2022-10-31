@@ -1,0 +1,17 @@
+.icon_view {
+  display: flex;
+  flex-flow: row wrap;
+}
+.icon_view .icon {
+  width: 18%;
+  margin: 30rpx 15rpx 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon_view .icon:nth-child(5n + 5) {
+  margin-right: 0;
+}
+.icon_view .icon:nth-child(-n + 5) {
+  margin-top: 0;
+}

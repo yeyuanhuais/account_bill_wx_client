@@ -1,0 +1,29 @@
+<view class="assets">
+  <view class="top item">
+    <view class="top_left" catchtap="openDialog" data-item="{{dataItem.childData}}">
+      <text>{{dataItem.title}}</text>
+      <icon name="icon-arrowdown" size="40" style="margin-left:20rpx" wx:if="{{!show}}" />
+      <icon name="icon-arrowup" size="40" style="margin-left:20rpx" wx:else />
+    </view>
+    <view class="top_right">
+      <text class="money">￥{{dataItem.assets||0}}</text>
+      <text class="net_money" wx:if="{{dataItem.title=='资产'}}">净资产￥{{dataItem.netAssets||0}}</text>
+    </view>
+  </view>
+  <block wx:for="{{dataItem.childData}}" wx:for-item="childItem" wx:for-index="childIndex" wx:key="childIndex">
+    <view wx:if="{{childItem.value}}" class="acount_item item" style="background-color:{{childItem.backgroundColor}}" catchtap="chooseType" data-id="{{childItem.id}}" data-title="{{childItem.title}}">
+      <view class="acount_item_left" bindtap="openDialog" data-item="{{dataItem.childData}}">
+        <icon name="{{childItem.icon}}" size="60" style="margin:10rpx;coloe:{{childItem.backgroundColor}}" />
+        <text>{{childItem.title}}</text>
+      </view>
+      <view class="acount_item_right">
+        <text class="money">{{childItem.assets||0}}</text>
+      </view>
+    </view>
+  </block>
+  <view class="add_box item" bind:tap="addAccount">
+    <icon name="icon-add" />
+    <text class="add_text">添加账户</text>
+  </view>
+  <half-screen-dialog wx:if="{{show}}" accountData="{{accountData}}" bind:close="close" bind:checkboxChange="checkboxChange" />
+</view>

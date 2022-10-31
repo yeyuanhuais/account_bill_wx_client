@@ -1,0 +1,4 @@
+<view class="ball {{rangeValue > 80?'danger':rangeValue > 60?'warning':''}}">
+  <view class="wave"></view>
+  <view class="wave-mask" style="top: {{45-rangeValue}}%"></view>
+</view>

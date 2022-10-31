@@ -1,0 +1,12 @@
+<!-- components/property/half_screen_dialog.wxml -->
+<mp-half-screen-dialog bindclose="close" show="{{true}}" maskClosable="{{false}}">
+  <view slot="title">
+    <text>请选择日期</text>
+  </view>
+  <view slot="desc">
+    <calendar />
+  </view>
+  <view slot="footer">
+    <button type="primary" bindtap="close">确定</button>
+  </view>
+</mp-half-screen-dialog>

@@ -1,0 +1,26 @@
+<view class="classify">
+  <view class="picker_group">
+    <picker class="picker_date" mode="date" value="{{time.startTime}}" bindchange="bindStartDateChange">
+      <view class="picker">{{time.startTime}}</view>
+    </picker>
+    至
+    <picker class="picker_date" mode="date" value="{{time.endTime}}" bindchange="bindEndDateChange">
+      <view class="picker">{{time.endTime}}</view>
+    </picker>
+  </view>
+  <view class="pie">
+    <ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ ecPie }}"></ec-canvas>
+  </view>
+  <view class="classify_item">
+    <block wx:for="{{classifyItem}}" wx:key="index">
+      <view class="item">
+        <view class="timetype">
+          <icon name="icon-xianjinqianbao" size="60" />
+          <text class="ml20">交通</text>
+        </view>
+        <text>37.5%</text>
+        <text>8888</text>
+      </view>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "navigationBarTitleText": "账单",
+    "usingComponents": {
+        "wave-progress-ball": "/components/common/wave_progress_ball/wave_progress_ball"
+    }
+}
