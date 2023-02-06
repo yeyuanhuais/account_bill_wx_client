@@ -74,3 +74,6 @@
 再执行
 
 `npx iconfont-wechat`
+
+## 目前效果
+![alt](./assets//images/Snipaste_2023-02-06_15-22-26.png)![alt](./assets//images/Snipaste_2023-02-06_15-22-58.png)![alt](./assets//images/Snipaste_2023-02-06_15-35-20.png)![alt](./assets//images/Snipaste_2023-02-06_15-35-31.png)![alt](./assets//images/Snipaste_2023-02-06_15-35-49.png)
