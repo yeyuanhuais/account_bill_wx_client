@@ -1,0 +1,33 @@
+.page {
+  padding: 15rpx 15rpx 0 15rpx;
+  font-size: 30rpx;
+  color: #808080;
+}
+.page .exams {
+  font-size: 40rpx;
+}
+.page .exams .exam {
+  margin-bottom: 30rpx;
+  box-shadow: -5rpx 5rpx 8rpx 8rpx #d7d7d7;
+  border-radius: 5rpx;
+}
+.page .exams .exam .exam_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  line-height: 60rpx;
+  border-bottom: 1rpx solid #ddd;
+  height: 90rpx;
+  padding: 0 20rpx;
+}
+.page .exams .exam .exam-body {
+  height: 480rpx;
+  padding-top: 15rpx;
+  transition: all 0.5s ease;
+  text-indent: 40rpx;
+  display: block;
+}
+.page .exams .exam .hidden {
+  display: none;
+}

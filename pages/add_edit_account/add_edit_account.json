@@ -1,7 +1,6 @@
 {
   "navigationBarTitleText": "新建账户",
   "usingComponents": {
-    "mp-form": "/components/common/form/form",
     "account-color":"/components/property/account_color/account_color"
   }
 }

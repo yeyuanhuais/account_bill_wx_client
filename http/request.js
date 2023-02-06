@@ -1,5 +1,6 @@
 let env = wx.getAccountInfoSync().miniProgram.envVersion;
 const { baseUrl } = env === "develop" ? require("./env.js").dev : require("./env.js").prod;
+console.log("%c baseUrl", "font-size:13px; background:pink; color:#bf2c9f;", baseUrl);
 module.exports = {
   // 二次封装wx.request
   // {String }url:请求的接口地址

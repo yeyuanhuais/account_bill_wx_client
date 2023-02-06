@@ -12,37 +12,37 @@ Page({
           {
             id: 1,
             name: "现金",
-            icon: "icon-xianjin",
+            icon: "xianjin",
             dec: ""
           },
           {
             id: 2,
             name: "储蓄卡",
-            icon: "icon-yinhangka",
+            icon: "yinhangka",
             dec: ""
           },
           {
             id: 3,
             name: "支付宝",
-            icon: "icon-zhifubao",
+            icon: "zhifubao",
             dec: ""
           },
           {
             id: 4,
             name: "微信钱包",
-            icon: "icon-weixin",
+            icon: "weixin",
             dec: ""
           },
           {
             id: 5,
             name: "储值卡",
-            icon: "icon-yinhangqia",
+            icon: "yinhangqia",
             dec: ""
           },
           {
             id: 6,
             name: "收账",
-            icon: "icon-shoukuan",
+            icon: "shoukuan",
             dec: "别人欠的钱"
           }
         ]
@@ -54,25 +54,25 @@ Page({
           {
             id: 7,
             name: "信用卡",
-            icon: "icon-salary",
+            icon: "salary",
             dec: ""
           },
           {
             id: 8,
             name: "蚂蚁花呗",
-            icon: "icon-mayihuabei",
+            icon: "mayihuabei",
             dec: ""
           },
           {
             id: 9,
             name: "京东白条",
-            icon: "icon-jingdongbaitiao",
+            icon: "jingdongbaitiao",
             dec: ""
           },
           {
             id: 10,
             name: "欠账",
-            icon: "icon-qiankuan",
+            icon: "qiankuan",
             dec: "欠别人的钱"
           }
         ]

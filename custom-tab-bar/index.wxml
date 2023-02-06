@@ -1,6 +1,6 @@
 <view class="bar">
   <view class="bar__item {{ index == selected ? 'bar__active' : '' }}" wx:for="{{list}}" wx:key="index" bind:tap="handleClick" data-index="{{ index }}" data-path="{{ item.pagePath }}">
-    <icon name="icon-jia" wx:if="{{index == 2&&selected==2 }}" color="#76BA99" size="60" class="bar__icon" mode="aspectFit" catchtap="jump"/>
+    <icon name="jia" wx:if="{{index == 2&&selected==2 }}" color="#76BA99" size="60" class="bar__icon" mode="aspectFit" catchtap="jump"/>
     <icon name="{{item.icon}}" wx:elif="{{index == selected }}" color="#76BA99" size="60" class="bar__icon" mode="aspectFit" />
     <icon name="{{item.icon}}" wx:else color="#999999" size="60" class="bar__icon" mode="aspectFit" />
     <view class="bar__text">{{ item.text }}</view>

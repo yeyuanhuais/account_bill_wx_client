@@ -8,13 +8,13 @@
         <view class="btn-box">
             <!-- TODO: 需要替换成删除icon -->
             <view class="key" hover-class="number-box-hover" data-key="X" catchtap="handleKey">
-                <icon name="icon-tuige"></icon>
+                <icon name="tuige"></icon>
             </view>
             <view class="key" hover-class="number-box-hover" data-key="+" catchtap="handleKey">
-                <icon name="icon-jia1"></icon>
+                <icon name="jia1"></icon>
             </view>
             <view class="key" hover-class="number-box-hover" data-key="-" catchtap="handleKey">
-                <icon name="icon-jian"></icon>
+                <icon name="jian"></icon>
             </view>
             <view class="key pay_btn" hover-class="pay-btn-hover" catchtap="handleSubmit">
                 {{isCalculate?"=":"确定"}}

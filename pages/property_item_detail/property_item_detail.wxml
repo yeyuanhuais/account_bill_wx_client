@@ -34,19 +34,19 @@
             <text>流出：￥0.00</text>
           </view>
           <view>
-            <icon name="{{selected[index] ? 'icon-arrowup' : 'icon-arrowdown'}}" size="30"></icon>
+            <icon name="{{selected[index] ? 'arrowup' : 'arrowdown'}}" size="30"></icon>
           </view>
         </view>
         <view class="list_text {{selected[index] ? '' : 'hidden_content'}}">
           <view wx:if="{{!item.list_content}}" class="waterlessData">
-            <icon name="icon-wushuju" size="100" />
+            <icon name="wushuju" size="100" />
             <text>无流水数据</text>
           </view>
           <block wx:else>
             <view class="day">
               <view class="timetype">
                 <text class="mr20">09日</text>
-                <icon name="icon-xianjinqianbao" size="40" />
+                <icon name="xianjinqianbao" size="40" />
                 <text class="ml20">交通</text>
               </view>
               <text>+888888</text>
@@ -54,7 +54,7 @@
             <view class="day">
               <view class="timetype">
                 <text class="mr20">09日</text>
-                <icon name="icon-xianjinqianbao" size="40" />
+                <icon name="xianjinqianbao" size="40" />
                 <text class="ml20">交通</text>
               </view>
               <text>+888888</text>

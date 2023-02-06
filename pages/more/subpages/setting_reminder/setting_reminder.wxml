@@ -1,0 +1,20 @@
+<!-- 设置提醒 -->
+<view class="page">
+  <view class="exams">
+    <view class="exam" wx:for="{{exam_time}}" wx:key="{{index}}">
+      <view class="exam_header" data-index="{{index}}" bind:tap="show">
+        <view>{{item.name}}</view>
+        <view>
+          {{item.value}}
+          <icon size="30" name="{{selected[index] ?'arrowup': 'arrowdown'}}" color="#868686" />
+        </view>
+      </view>
+      <!-- 下面是列表需要显示或隐藏的内容 -->
+      <view class="exam_body {{selected[index] ? '' : 'hidden'}}">
+        <block v-if="item.name=='记账提醒'">
+          
+        </block>
+      </view>
+    </view>
+  </view>
+</view>

@@ -5,14 +5,12 @@
   align-items: center;
   padding: 10rpx 40rpx;
 }
-.more .no_login .user_avatar,
-.more .login .user_avatar {
+.more .user_avatar {
   width: 150rpx;
   height: 150rpx;
   border-radius: 50%;
 }
-.more .no_login .user_nickname,
-.more .login .user_nickname {
+.more .user_nickname {
   font-size: 40rpx;
   margin-left: 40rpx;
 }

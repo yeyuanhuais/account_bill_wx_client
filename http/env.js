@@ -7,6 +7,6 @@ module.exports = {
   },
   //线上url
   prod: {
-    baseUrl: "https://yyh28.top:3100/v1",
+    baseUrl: "https://yyh28.top:3200/v1",
   },
 };

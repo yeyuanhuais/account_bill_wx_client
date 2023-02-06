@@ -2,8 +2,8 @@
   <view class="top item">
     <view class="top_left" catchtap="openDialog" data-item="{{dataItem.childData}}">
       <text>{{dataItem.title}}</text>
-      <icon name="icon-arrowdown" size="40" style="margin-left:20rpx" wx:if="{{!show}}" />
-      <icon name="icon-arrowup" size="40" style="margin-left:20rpx" wx:else />
+      <icon name="arrowdown" size="40" style="margin-left:20rpx" wx:if="{{!show}}" />
+      <icon name="arrowup" size="40" style="margin-left:20rpx" wx:else />
     </view>
     <view class="top_right">
       <text class="money">￥{{dataItem.assets||0}}</text>
@@ -22,7 +22,7 @@
     </view>
   </block>
   <view class="add_box item" bind:tap="addAccount">
-    <icon name="icon-add" />
+    <icon name="add" />
     <text class="add_text">添加账户</text>
   </view>
   <half-screen-dialog wx:if="{{show}}" accountData="{{accountData}}" bind:close="close" bind:checkboxChange="checkboxChange" />

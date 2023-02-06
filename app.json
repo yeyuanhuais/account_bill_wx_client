@@ -8,7 +8,8 @@
     "pages/property_item_detail/property_item_detail",
     "pages/add_edit_bill_record/add_edit_bill_record",
     "pages/add_edit_account/add_edit_account",
-    "pages/income_expenditure_classification/income_expenditure_classification"
+    "pages/income_expenditure_classification/income_expenditure_classification",
+    "pages/more/subpages/setting_reminder/setting_reminder"
   ],
   "tabBar": {
     "custom": true,
@@ -42,7 +43,8 @@
     "icon": "/components/common/icon/icon",
     "tabs": "/components/common/tabs/tabs",
     "cells": "/components/common/cells/cells",
-    "cell": "/components/common/cell/cell"
+    "cell": "/components/common/cell/cell",
+    "mp-form": "/components/common/form/form"
   },
   "useExtendedLib": {
     "weui": true

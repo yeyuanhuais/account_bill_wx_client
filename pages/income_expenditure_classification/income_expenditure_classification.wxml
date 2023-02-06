@@ -5,7 +5,7 @@
         <cells>
           <cell>
             <view catchtap="add" data-type="{{item.id}}">
-              <icon name="icon-add" />
+              <icon name="add" />
               添加
             </view>
           </cell>

@@ -4,57 +4,56 @@
     <text class="user_nickname">{{user_info.account}}</text>
   </view>
   <view class="no_login" wx:else bindtap="getUserProfile">
-    <icon class="user_avatar" size="140" name="icon-avatar" />
+    <icon class="user_avatar" size="140" name="avatar" />
     <text class="user_nickname">未登录</text>
   </view>
   <cells>
-    <cell link url="./cell">
+    <cell link url="./subpages/setting_reminder/setting_reminder">
       <view>
-        <icon name="icon-baryinhangka" />
+        <icon name="tixing" color="#76BA99" />
         设置提醒
       </view>
-      <view slot="footer">说明文字</view>
+      <view slot="footer"></view>
     </cell>
     <cell link url="/pages/income_expenditure_classification/income_expenditure_classification">
       <view>
-        <icon name="icon-baryinhangka" />
+        <icon name="baryinhangka" />
         收入支出分类
       </view>
     </cell>
     <cell link url="./cell">
       <view>
-        <icon name="icon-baryinhangka" />
+        <icon name="baryinhangka" />
         周期帐
       </view>
       <view slot="footer">说明文字</view>
     </cell>
     <cell link url="./cell">
       <view>
-        <icon name="icon-baryinhangka" />
+        <icon name="baryinhangka" />
         月预算
       </view>
       <view slot="footer">说明文字</view>
     </cell>
     <cell link url="./cell">
       <view>
-        <icon name="icon-baryinhangka" />
+        <icon name="baryinhangka" />
         每月开始于
       </view>
       <view slot="footer">说明文字</view>
     </cell>
     <cell>
       <view>
-        <icon name="icon-baryinhangka" />
+        <icon name="baryinhangka" />
         导出
       </view>
       <view slot="footer">说明文字</view>
     </cell>
-    <cell>
+    <cell bindtap="logout" wx:if="{{user_info.account}}">
       <view>
-        <icon name="icon-baryinhangka" />
+        <icon name="tuichu" color="#76BA99" />
         退出登录
       </view>
-      <view slot="footer">说明文字</view>
     </cell>
   </cells>
 </view>

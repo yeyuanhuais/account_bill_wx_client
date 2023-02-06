@@ -9,7 +9,7 @@
   </block>
   <block wx:else>
     <view class="no_data">
-      <icon name="icon-wushuju" size="300" />
+      <icon name="wushuju" size="300" />
     </view>
   </block>
 </view>

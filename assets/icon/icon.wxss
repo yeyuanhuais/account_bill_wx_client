@@ -13,19 +13,19 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
-  .icon-zichan:before {
+  .zichan:before {
     content: "\e93e";
   }
   
-  .icon-baobiao:before {
+  .baobiao:before {
     content: "\e605";
   }
   
-  .icon-gengduo:before {
+  .gengduo:before {
     content: "\e66e";
   }
   
-  .icon-zhangdan:before {
+  .zhangdan:before {
     content: "\e6a4";
   }
   

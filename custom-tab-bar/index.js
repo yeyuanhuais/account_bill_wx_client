@@ -5,22 +5,22 @@ Component({
       {
         pagePath: "pages/property/property",
         text: "资产",
-        icon: "icon-baryinhangka",
+        icon: "baryinhangka",
       },
       {
         pagePath: "pages/report/report",
         text: "报表",
-        icon: "icon-barshujutongji",
+        icon: "barshujutongji",
       },
       {
         pagePath: "pages/bill/bill",
         text: "账单",
-        icon: "icon-bargenjinjilu",
+        icon: "bargenjinjilu",
       },
       {
         pagePath: "pages/more/more",
         text: "更多",
-        icon: "icon-bargengduo",
+        icon: "bargengduo",
       },
     ],
   },
